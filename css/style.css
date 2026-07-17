@@ -1,0 +1,87 @@
+/* css/style.css — Todo List Life Dashboard styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #5c54a4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.dashboard {
+    width: 100%;
+    max-width: 800px;
+    background: #5c54a4;
+}
+
+/* Kotak-kotak Utama */
+.card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Jam / Header atas */
+.header-card {
+    background: #e2e0ff;
+    text-align: center;
+    color: #333;
+}
+.time {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #4a4390;
+}
+
+/* Layout bawah (Timer & Tugas berdampingan) */
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+@media (max-width: 600px) {
+    .main-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Tombol-tombol */
+button {
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #574feb;
+}
+
+.btn-delete {
+    background-color: #ff6b6b;
+}
+.btn-delete:hover {
+    background-color: #e65c5c;
+}
+
+/* Input Fields */
+input[type="text"] {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-right: 5px;
+}
